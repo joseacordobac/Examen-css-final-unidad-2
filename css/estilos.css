@@ -122,6 +122,18 @@ section{
 		margin: 10px;
 	}
 
+	.pagina2[src^="imagenes"]{
+		filter: blur(10px);
+	}
+	.pagina2 img:nth-child(even){
+		-webkit-filter: grayscale(100%);
+		filter:grayscale(100%);
+
+	}
+	.pagina2 img:nth-child(odd){
+		filter: sepia(90%);
+	}
+
 
 	/*PAISAJES SECTION*/
 
