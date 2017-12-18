@@ -1,0 +1,186 @@
+body{
+	background-color: #02010a;
+}
+
+.contenido{
+	background-color: black;
+	width: 100%;
+	max-width: 900px;
+	margin:auto;
+
+
+	/*FLEX*/
+	display: flex;
+	flex-flow: row wrap; 
+}
+
+h1, h2, h3, h4, h5, p, a{
+	font-family: 'Dancing Script', cursive;
+}
+
+
+	header{
+		background-color: #5b7989;
+		width: 100%;
+		border-radius: 10px;
+
+		}
+
+		.menu{	
+			width: 100%;
+		
+			/*FLEX*/
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-between;
+			align-items: center;
+			}
+
+			.menu h1{
+				color: white;
+				margin: 20px;
+				text-shadow: 2px 2px #02010a;
+			}
+
+		
+			header nav{
+				width: 50%;
+
+				/*FLEX*/
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			}
+
+
+				header nav a{
+					color:#ffF;
+					text-align: center;
+					padding: 10px;
+					
+					/*FLEX*/
+					flex-grow: 1;
+
+
+				}
+
+	.principal{
+		background-color: #82c3a6;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		margin: auto;
+	}
+		.principal img{
+			margin: 10px;
+		}
+
+img{
+	-webkit-box-shadow: 2px 2px 0px 0px #02010a;
+	-moz-box-shadow: 2px 2px 0px 0px #02010a;
+	box-shadow: 2px 2px 0px 0px #02010a;
+}
+
+section{
+	background-color: #d5c75f;
+			
+	}
+
+	.fotos1{
+		display: inline-flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		margin: 10px;
+	}
+
+	section div picture a img{
+		border:solid 1px black;
+	}
+
+	#retratos img:hover{
+		transform: rotate(10deg);
+		box-shadow: 2px 2px #82c3a6;
+	}
+
+	#paisajes img:hover{
+	-webkit-transform: translate(20px, -5px);
+	-moz-transform: translate(20px, -5px);
+	-o-transform: translate(20px, -5px);
+	-ms-transform: translate(20px, -5px);
+	transform: translate(20px, -5px);
+	box-shadow: 2px 2px #82c3a6;
+	}
+
+	.pagina2{
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		}
+
+	.pagina2 img{
+		width: 30%;
+		margin: 10px;
+	}
+
+
+	/*PAISAJES SECTION*/
+
+
+
+footer{
+	background-color: #C6d5c5;
+	width: 100%;
+	padding: 20px;
+	border-radius: 0px 0px 10px 10px;
+		/*FLEX*/
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+
+	}
+
+	.redes{
+	}
+		
+	.contacto{
+		
+	}
+
+	.politicas{
+		
+	}
+
+
+ @media(max-width: 850px){
+	.fotos1{
+		width: 100%;
+		display: flex;
+		flex-flow: row wrap;
+		margin left: 5px;	
+		}
+	}
+@media (max-width:788px){
+	.menu{
+		width: 100%;
+		justify-content: center;
+		}
+	}
+
+
+@media(max-width: 615px){
+	.pagina2 img{
+		display: flex;
+		flex-flow: row wrap;
+		width: 45%;
+	}
+}
+
+@media (max-width: 480px){
+	footer{
+		flex-flow: column wrap;
+	}
+	.pagina2 img{
+		width: 100%;
+	}
+}
+
