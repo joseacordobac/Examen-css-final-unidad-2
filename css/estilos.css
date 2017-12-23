@@ -76,8 +76,8 @@ h1, h2, h3, h4, h5, p, a{
 					flex-grow: 1;
 				}
 
-					.menu nav a:visited{
-						text-decoration: none;
+					.menu nav a:actived{
+					 text-decoration: none;
 					}
 
 	.principal{
@@ -99,13 +99,12 @@ img{
 
 section{
 	background-color: #d5c75f;
+	width: 100%;
 	}
 
-	.fotos1{
+	.fotos1 {
 		display: inline-flex;
-		flex-flow: row nowrap;
-		justify-content: space-between;
-		margin: 10px;
+		margin: 20px;
 	}
 
 	/* La transición la debo agregar directamente */
